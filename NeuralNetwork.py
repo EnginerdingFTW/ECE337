@@ -1,5 +1,6 @@
 import math
 import random
+import os
 import numpy as np
 
 class NeuralNode(object):
@@ -24,16 +25,16 @@ class NeuralNode(object):
         temp = 0;
         for connection in self.neuralConnections:
             temp = temp + connection.GetValueOut()
-        return np.asarray(temp)
+        return np.asfarray(temp)
 
     def GetW(self):
         temp = []
         for con in self.neuralConnections:
             temp.append(con.weightIndex)
-        return np.asarray(temp)
+        return np.asfarray(temp)
 
     def GetA(self):
-        return np.asarray(self.CalculateOutput())
+        return np.asfarray(self.CalculateOutput())
 
     def ActivationFunction(self, input):
         return 1 / (1 + np.exp(-input))
@@ -122,26 +123,26 @@ class NeuralNetworkLayer(object):
         if (len(self.layerNodes) == 1):
             for con in self.layerNodes[0].neuralConnections:
                 temp.append(con.inputNode.GetZ())
-            return np.asarray(temp)
+            return np.asfarray(temp)
 
         for row in self.layerNodes:
             for node in row:
                 for con in node.neuralConnections:
                     temp.append(con.inputNode.GetZ())
-        return np.asarray(temp)
+        return np.asfarray(temp)
 
     def getAOfLastLay(self):
         temp = []
         if (len(self.layerNodes) == 1):
             for con in self.layerNodes[0].neuralConnections:
                 temp.append(con.inputNode.CalculateOutput())
-            return np.asarray(temp)
+            return np.asfarray(temp)
 
         for row in self.layerNodes:
             for node in row:
                 for con in node.neuralConnections:
                     temp.append(con.inputNode.CalculateOutput())
-        return np.asarray(temp)
+        return np.asfarray(temp)
 
     def getW(self):
         temp = []
@@ -149,7 +150,7 @@ class NeuralNetworkLayer(object):
             for node in row:
                 for connection in node.neuralConnections:
                     temp.append(connection.weightIndex)
-        return np.asarray(temp)
+        return np.asfarray(temp)
 
 class NeuralNetwork(object):
     size = 8
@@ -188,21 +189,21 @@ class NeuralNetwork(object):
         self.W1 = layer1.getW()
         self.Z2 = layer2.getZOfLastLay()
         self.A2 = layer2.getAOfLastLay()
-        # print("length of W1: " + str(len(self.W1)))
+        print("length of W1: " + str(len(self.W1)))
         # print("length of Z2: " + str(len(self.Z2)))
         # print("length of A2: " + str(len(self.A2)))
 
         self.W2 = layer2.getW()
         self.Z3 = outputNode.getZOfLastLay()
         self.A3 = outputNode.getAOfLastLay()
-        # print("length of W2: " + str(len(self.W2)))
+        print("length of W2: " + str(len(self.W2)))
         # print("length of Z3: " + str(len(self.Z3)))
         # print("length of A3: " + str(len(self.A3)))
 
         self.W3 = outputNode.layerNodes[0].GetW()
         self.Z4 = outputNode.layerNodes[0].GetZ()
         self.yHat = outputNode.layerNodes[0].GetA()
-        # print("length of W3: " + str(len(self.W3)))
+        print("length of W3: " + str(len(self.W3)))
         # print("length of Z4: " + str(self.Z4))
         # print("length of yHat: " + str(self.yHat))
 
@@ -235,7 +236,7 @@ class NeuralNetwork(object):
 
 
 class Pointer(object):
-    weights = np.zeros(236)
+    weights = np.asfarray(np.zeros(236))
     i = 0
     loadWeightInd = 0
     weightsLen = 236
@@ -245,7 +246,7 @@ class Pointer(object):
         return
 
     def AddWeight(self, node):
-        self.weights[node]
+        self.weights[self.i] = node
         self.i = self.i + 1
         return self.i - 1
 
@@ -254,7 +255,7 @@ class Pointer(object):
             temp = []
             for element in index:
                 temp.append(self.weights[element])
-            return np.asarray(temp)
+            return np.asfarray(temp)
         else:
             return self.weights[index]
 
@@ -269,22 +270,61 @@ class Pointer(object):
         for x in range(0, self.weightsLen):
             self.AddWeight(random.randrange(-5, 5))
 
+    def SaveWeightsToFile(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        # print(dir_path)
+        fp = open(dir_path + "/shapeWeights.txt", 'w')
+        for item in self.weights:
+            temp = "%.9f" % item
+            fp.write(temp + "\n")
+        fp.close()
+
+    def LoadWeightFromFile(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        fp = open(dir_path + "/shapeWeights.txt", 'r')
+        lines = fp.readlines()
+        fp.close()
+        if (len(lines) < 2):
+            self.GenerateRandomWeights()
+            return
+        k = 0
+        for line in lines:
+            self.weights[k] = float(line)
+            k = k + 1
+
+    def UpdateWeights(self, newWeights, sel):
+        if (sel == 1):
+            #W1 is indicies 0-195
+            for k in range(0, 196):
+                self.ChangeWeight(k, newWeights[k])
+        elif (sel == 2):
+            #W2 is indices 196 - 231
+            for k in range(196, 232):
+                    self.ChangeWeight(k, newWeights[k - 196])
+        elif (sel == 3):
+            #W3 is indices 232 - 235
+            for k in range(232, 236):
+                    self.ChangeWeight(k, newWeights[k - 232])
+
 
 
 if __name__ == '__main__':
-    arr = []
-    for x in range(0, 8):
-        temp = []
-        for y in range(0, 8):
-            temp.append(1)
-        arr.append(temp)
+    arr = [[1, 1, 1, 1, 1, 1, 1, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 0, 0, 0, 0, 0, 0, 1],
+           [1, 1, 1, 1, 1, 1, 1, 1]]
     for x in arr:
         print(x)
     p = Pointer()
-    p.GenerateRandomWeights()
+    p.LoadWeightFromFile()
     nn = NeuralNetwork(arr, p)
     nn.forward(arr)
-    # print(len(p.weights))   #236 weights total
+    # a, b, c = nn.costFunctionPrime(arr, 1)
+    p.SaveWeightsToFile()
 
 
 
