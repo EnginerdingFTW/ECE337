@@ -308,23 +308,23 @@ class Pointer(object):
 
 
 
-if __name__ == '__main__':
-    arr = [[1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1]]
-    for x in arr:
-        print(x)
-    p = Pointer()
-    p.LoadWeightFromFile()
-    nn = NeuralNetwork(arr, p)
-    nn.forward(arr)
-    # a, b, c = nn.costFunctionPrime(arr, 1)
-    p.SaveWeightsToFile()
+# if __name__ == '__main__':
+#     arr = [[1, 1, 1, 1, 1, 1, 1, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 0, 0, 0, 0, 0, 0, 1],
+#            [1, 1, 1, 1, 1, 1, 1, 1]]
+#     for x in arr:
+#         print(x)
+#     p = Pointer()
+#     p.LoadWeightFromFile()
+#     nn = NeuralNetwork(arr, p)
+#     nn.forward(arr)
+#     # a, b, c = nn.costFunctionPrime(arr, 1)
+#     p.SaveWeightsToFile()
 
 
 
