@@ -11,8 +11,8 @@ class Neural_Network(object):
     def __init__(self):
         #Define Hyperparameters
         self.inputLayerSize = 64
-        self.hiddenLayer1Size = 32
-        self.hiddenLayer2Size = 16
+        self.hiddenLayer1Size = 16
+        self.hiddenLayer2Size = 4
         self.outputLayerSize = 1
 
         layerSize, w1, w2, w3 = LoadWeightFromFile()
