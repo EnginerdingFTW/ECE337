@@ -11,8 +11,8 @@ class Neural_Network(object):
     def __init__(self):
         #Define Hyperparameters
         self.inputLayerSize = 64
-        self.hiddenLayer1Size = 16
-        self.hiddenLayer2Size = 4
+        self.hiddenLayer1Size = 32
+        self.hiddenLayer2Size = 16
         self.outputLayerSize = 1
 
         layerSize, w1, w2, w3 = LoadWeightFromFile()
@@ -29,6 +29,7 @@ class Neural_Network(object):
     def forward(self, X):
         #Propogate inputs though network
         # print("X shape = " + str(X.shape))
+        # print("W1 shape = " + str(self.W1.shape))
         self.z2 = np.dot(X, self.W1)
         # print("z2 shape = " + str(self.z2.shape))
         self.a2 = self.sigmoid(self.z2)
@@ -234,80 +235,80 @@ def LoadWeightFromFile():
 
 
 if __name__ == '__main__':
-    arr = [[.9, .9, .9, .9, .9, .9, .9, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, 0, 0, 0, 0, 0, 0, .9],
-           [.9, .9, .9, .9, .9, .9, .9, .9]]
-
-    arr2 = [[0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
-           [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-           [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-            [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-            [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-            [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-            [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-           [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]]
-
-    arr3 = [[1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 0, 0, 0, 0, 0, 0, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1]]
-
-    max = [[1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1],
-           [1, 1, 1, 1, 1, 1, 1, 1]]
-
-    min = [[0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0],
-           [0, 0, 0, 0, 0, 0, 0, 0]]
-
-
-
-    temp = []
-    for row in arr:
-        for el in row:
-            temp.append(el)
-    temp2 = []
-    for row in arr2:
-        for el in row:
-            temp2.append(el)
-
-    temp3 = []
-    for row in arr3:
-        for el in row:
-            temp3.append(el)
-
-    max_arr = []
-    for row in max:
-        for el in row:
-            max_arr.append(el)
-
-    min_arr = []
-    for row in min:
-        for el in row:
-            min_arr.append(el)
-
-    max_arr = np.asarray([max_arr, min_arr])
-    temp_final = [temp, temp2, temp3]
-    y_final = [[1], [1], [1]]
+    # arr = [[.9, .9, .9, .9, .9, .9, .9, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, 0, 0, 0, 0, 0, 0, .9],
+    #        [.9, .9, .9, .9, .9, .9, .9, .9]]
+    #
+    # arr2 = [[0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+    #        [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #        [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
+    #        [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]]
+    #
+    # arr3 = [[1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 0, 0, 0, 0, 0, 0, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1]]
+    #
+    # max = [[1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1],
+    #        [1, 1, 1, 1, 1, 1, 1, 1]]
+    #
+    # min = [[0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0],
+    #        [0, 0, 0, 0, 0, 0, 0, 0]]
+    #
+    #
+    #
+    # temp = []
+    # for row in arr:
+    #     for el in row:
+    #         temp.append(el)
+    # temp2 = []
+    # for row in arr2:
+    #     for el in row:
+    #         temp2.append(el)
+    #
+    # temp3 = []
+    # for row in arr3:
+    #     for el in row:
+    #         temp3.append(el)
+    #
+    # max_arr = []
+    # for row in max:
+    #     for el in row:
+    #         max_arr.append(el)
+    #
+    # min_arr = []
+    # for row in min:
+    #     for el in row:
+    #         min_arr.append(el)
+    #
+    # max_arr = np.asarray([max_arr, min_arr])
+    # temp_final = [temp, temp2, temp3]
+    # y_final = [[1], [1], [1]]
     # for x in range(0, 1):
     #     temp_final.append(temp3)
     #     y_final.append([1])
@@ -316,17 +317,62 @@ if __name__ == '__main__':
     #     print(x)
     ### NEED AT LEAST 2 INPUTS OR MATRIX MULTIPLICATION WON'T WORK!!!!!!!
     #numpy defaults a ex: 1x4 or 4x1 matrix to be 4x1 so transposing doesn't work
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    fp = open(dir_path + "/testSquares.txt", 'r')
+    lines = fp.readlines()
+    fp.close()
+    fp2 = open(dir_path + "/testTriangles.txt", 'r')
+    lines2 = fp2.readlines()
+    fp2.close()
+
+    temp_final = []
+    y_final = []
+    k = 1
+    current_square = []
+    for line in lines:
+        if (k % 9 != 0):
+            for item in line.split('\t')[0:8]:
+                current_square.append(float(item))
+        else:
+            temp_final.append(np.asarray(current_square))
+            y_final.append([0.9])
+            current_square = []
+        k = k + 1
+
+
+    k = 1
+    current_tri = []
+    for line in lines2:
+        if (k % 9 != 0):
+            for item in line.split('\t')[0:8]:
+                current_tri.append(float(item))
+        else:
+            temp_final.append(np.asarray(current_tri))
+            y_final.append([0.1])
+            current_tri = []
+        k = k + 1
+
+
+
+    temp_final = np.asarray(temp_final)
+    y_final = np.asarray(y_final)
+
+
     arr = np.asarray(temp_final)
     nn = Neural_Network()
     print("before training:")
     out = nn.forward(arr)
-    print(out)
+    print(nn.W3)
     t = trainer(nn)
     t.train(arr, np.asarray(y_final))
     print("after training:")
     out = nn.forward(arr)
+    print(nn.W3)
+    print("final output")
     print(out)
-    print("tests:")
-    out = nn.forward(max_arr)
+
+    print(temp_final.shape)
+    print("test bad output")
+    sq = np.zeros((1, 64))
+    out = nn.forward(sq)
     print(out)
-    nn.SaveWeights()
