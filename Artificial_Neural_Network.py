@@ -47,10 +47,18 @@ class Neural_Network(object):
     def sigmoid(self, z):
         #Apply sigmoid activation function to scalar, vector, or matrix
         return 1/(1+np.exp(-z))
+        # if z >= 0:
+        #     return z
+        # else:
+        #     return np.zeros(z)
 
     def sigmoidPrime(self,z):
         #Gradient of sigmoid
         return np.exp(-z)/((1+np.exp(-z))**2)
+        # if (z >= 0):
+        #     return np.ones(z)
+        # else:
+        #     return np.zeros(z)
 
     def costFunction(self, X, y):
         #Compute cost for given X,y, use weights already stored in class.
