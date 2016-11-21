@@ -4,6 +4,8 @@ import time
 import numpy as np
 from matplotlib import pyplot as plt
 
+
+
 def getImageData(filename):
     """Loads image data stored in filename, returns a list of arrays."""
 
