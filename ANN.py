@@ -47,10 +47,6 @@ class Neural_Network(object):
 
     def sigmoid(self, z):
         #Apply sigmoid activation function to scalar, vector, or matrix
-        print("z:")
-        print(z)
-        print("after sig")
-        print(1/(1+np.exp(-z)))
         return 1/(1+np.exp(-z))
 
         # x_size, y_size = z.shape
@@ -297,95 +293,80 @@ if __name__ == '__main__':
 
     start = time.time()
     lineCount = 0
-    # while lineCount < 54000:
-    #
-    #     # for x in arr:
-    #     #     print(x)
-    #     ### NEED AT LEAST 2 INPUTS OR MATRIX MULTIPLICATION WON'T WORK!!!!!!!
-    #     #numpy defaults a ex: 1x4 or 4x1 matrix to be 4x1 so transposing doesn't work
-    #     dir_path = os.path.dirname(os.path.realpath(__file__))
-    #     fp = open(dir_path + "/MNISTdataset.txt", 'r')
-    #     lines2 = fp.readlines()
-    #     fp.close()
-    #
-    #     temp_final = []
-    #     y_final = []
-    #     k = 1
-    #
-    #
-    #
-    #     #current_square = []
-    #     #for line in lines:
-    #     #    if (k % 9 != 0):
-    #     #        for item in line.split('\t')[0:8]:
-    #     #            current_square.append(float(item))
-    #     #    else:
-    #     #        temp_final.append(np.asarray(current_square))
-    #     #        y_final.append([0.9])
-    #     #        current_square = []
-    #     #    k = k + 1
-    #     k = 1
-    #     current_tri = []
-    #     for line in lines2:
-    #         lineCount = lineCount + 1
-    #         if (k % 9 != 0):
-    #             for item in line.split('\t')[0:8]:
-    #                 current_tri.append(float(item))
-    #         else:
-    #             temp_final.append(np.asarray(current_tri))
-    #             list_temp = []
-    #             for item in line.split('\t')[0:10]:
-    #                 list_temp.append(float(item))
-    #             #y_final.append([0.1])
-    #             y_final.append(list_temp)
-    #             current_tri = []
-    #
-    #         if (k == 9 * 10):
-    #             break
-    #         k = k + 1
-    #
-    #
-    #     temp_final = np.asarray(temp_final)
-    #     y_final = np.asarray(y_final)
-    #     # print(temp_final.shape)
-    #     # print(y_final.shape)
-    #
-    #
-    #
-    #     arr = np.asarray(temp_final)
-    #     nn = Neural_Network()
-    #     print("before training:" + "  line count = " + str(lineCount))
-    #     out = nn.forward(arr)
-    #     #print(nn.W3)
-    #     #print(out)
-    #     # for i in range(0, 10):
-    #     #     print("i = " + str(i) + ":")
-    #     #     print(out[i])
-    #     #print(out[3])
-    #     t = trainer(nn)
-    #     t.train(arr, np.asarray(y_final))
+    while lineCount < 540000:
+
+        # for x in arr:
+        #     print(x)
+        ### NEED AT LEAST 2 INPUTS OR MATRIX MULTIPLICATION WON'T WORK!!!!!!!
+        #numpy defaults a ex: 1x4 or 4x1 matrix to be 4x1 so transposing doesn't work
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        fp = open(dir_path + "/MNISTdataset.txt", 'r')
+        lines2 = fp.readlines()
+        fp.close()
+
+        temp_final = []
+        y_final = []
+        k = 1
+
+
+
+        #current_square = []
+        #for line in lines:
+        #    if (k % 9 != 0):
+        #        for item in line.split('\t')[0:8]:
+        #            current_square.append(float(item))
+        #    else:
+        #        temp_final.append(np.asarray(current_square))
+        #        y_final.append([0.9])
+        #        current_square = []
+        #    k = k + 1
+        k = 1
+        current_tri = []
+        for line in lines2:
+            lineCount = lineCount + 1
+            if (k % 9 != 0):
+                for item in line.split('\t')[0:8]:
+                    current_tri.append(float(item))
+            else:
+                temp_final.append(np.asarray(current_tri))
+                list_temp = []
+                for item in line.split('\t')[0:10]:
+                    list_temp.append(float(item))
+                #y_final.append([0.1])
+                y_final.append(list_temp)
+                current_tri = []
+
+            if (k == 9 * 10):
+                break
+            k = k + 1
+
+
+        temp_final = np.asarray(temp_final)
+        y_final = np.asarray(y_final)
+        # print(temp_final.shape)
+        # print(y_final.shape)
+
+
+
+        arr = np.asarray(temp_final)
+        nn = Neural_Network()
+        print("before training:" + "  line count = " + str(lineCount))
+        out = nn.forward(arr)
+        #print(nn.W3)
+        #print(out)
+        # for i in range(0, 10):
+        #     print("i = " + str(i) + ":")
+        #     print(out[i])
+        #print(out[3])
+        t = trainer(nn)
+        t.train(arr, np.asarray(y_final))
     print("after training:")
-    arr = [[1, 1, 1, 1, 1, 1, 0, 0],
-           [1, 1, 0, 0, 1, 1, 0, 0],
-           [1, 1, 0, 0, 1, 1, 0, 0],
-           [1, 1, 1, 1, 1, 1, 0, 0],
-           [1, 1, 1, 1, 1, 1, 0, 0],
-           [0, 0, 0, 0, 1, 1, 0, 0],
-           [0, 0, 0, 0, 1, 1, 0, 0],
-           [0, 0, 0, 0, 1, 1, 0, 0]]
-    temp = []
-    for row in arr:
-        for ele in row:
-            temp.append(ele)
-    temp = np.asarray(temp)
-    nn = Neural_Network()
-    out = nn.forward(temp)
-    # print(out)
+    out = nn.forward(arr)
     #print(nn.W3)
     #print(out)
-    # for i in range(0, 10):
-    #     print("i = " + str(i) + ":")
-    #     print(out[i])
+    for i in range(0, 10):
+        print("i = " + str(i) + ":")
+        print(out[i])
 
     end = time.time()
     print("time = " + str(end - start))
