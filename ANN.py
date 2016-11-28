@@ -291,6 +291,8 @@ if __name__ == '__main__':
     #        [1, 0, 0, 0, 0, 0, 0, 1],
     #        [1, 1, 1, 1, 1, 1, 1, 1]]
 
+    choice = input("Are you training (1/0)?: ")
+
     start = time.time()
     lineCount = 0
     while lineCount < 540000:
@@ -341,6 +343,7 @@ if __name__ == '__main__':
             k = k + 1
 
 
+
         temp_final = np.asarray(temp_final)
         y_final = np.asarray(y_final)
         # print(temp_final.shape)
@@ -350,6 +353,10 @@ if __name__ == '__main__':
 
         arr = np.asarray(temp_final)
         nn = Neural_Network()
+
+        if (choice == 0):
+            break
+
         print("before training:" + "  line count = " + str(lineCount))
         out = nn.forward(arr)
         #print(nn.W3)
