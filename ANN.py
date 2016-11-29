@@ -7,6 +7,7 @@ import time
 
 
 ## ----------------------- Part 5 ---------------------------- ##
+import convert_fixed_point
 
 class Neural_Network(object):
     def __init__(self):
@@ -28,6 +29,25 @@ class Neural_Network(object):
             self.W3 = w3
 
     def forward(self, X):
+        self.x = X
+        #Propogate inputs though network
+        # print("X shape = " + str(X.shape))
+        # print("W1 shape = " + str(self.W1.shape))
+        self.z2 = np.dot(X, self.W1)
+        # print("z2 shape = " + str(self.z2.shape))
+        self.a2 = self.sigmoid(self.z2)
+        # print("a2 shape = " + str(self.a2.shape))
+        self.z3 = np.dot(self.a2, self.W2)
+        # print("z3 shape = " + str(self.z3.shape))
+        self.a3 = self.sigmoid(self.z3)
+        # print("a3 shape = " + str(self.a3.shape))
+        self.z4 = np.dot(self.a3, self.W3)
+        # print("z4 shape = " + str(self.z4.shape))
+        self.yHat = self.sigmoid(self.z4)
+        # print("yHat shape = " + str(yHat.shape))
+        return self.yHat
+
+    def forwardReturnAll(self, X):
         #Propogate inputs though network
         # print("X shape = " + str(X.shape))
         # print("W1 shape = " + str(self.W1.shape))
@@ -43,7 +63,7 @@ class Neural_Network(object):
         # print("z4 shape = " + str(self.z4.shape))
         yHat = self.sigmoid(self.z4)
         # print("yHat shape = " + str(yHat.shape))
-        return yHat
+        return self.a2, self.a3, yHat
 
     def sigmoid(self, z):
         #Apply sigmoid activation function to scalar, vector, or matrix
@@ -263,44 +283,25 @@ def LoadWeightFromFile():
 
 
 
-if __name__ == '__main__':
-    # arr = [[.9, .9, .9, .9, .9, .9, .9, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, 0, 0, 0, 0, 0, 0, .9],
-    #        [.9, .9, .9, .9, .9, .9, .9, .9]]
-    #
-    # arr2 = [[0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
-    #        [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #        [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #         [0.8, 0, 0, 0, 0, 0, 0, 0.8],
-    #        [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]]
-    #
-    # arr3 = [[1, 1, 1, 1, 1, 1, 1, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 0, 0, 0, 0, 0, 0, 1],
-    #        [1, 1, 1, 1, 1, 1, 1, 1]]
+def WriteArrayToFile(array, filename):
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    path = dir_path + "/testcases/" + filename
+    fp = open(path, 'w')
+    for element in array:
+        temp = "%.9f" % element
+        fp.write(temp + "\n")
+    fp.close()
+    convert_fixed_point.ConvertToFixedPoint(path)
+    os.remove(path) #removes the files that were generated for standard floating point, leaving just the fixed point
 
+if __name__ == '__main__':
     choice = input("Are you training (1/0)?: ")
 
     start = time.time()
     lineCount = 0
     while lineCount < 540000:
 
-        # for x in arr:
-        #     print(x)
-        ### NEED AT LEAST 2 INPUTS OR MATRIX MULTIPLICATION WON'T WORK!!!!!!!
-        #numpy defaults a ex: 1x4 or 4x1 matrix to be 4x1 so transposing doesn't work
+
         dir_path = os.path.dirname(os.path.realpath(__file__))
         fp = open(dir_path + "/MNISTdataset.txt", 'r')
         lines2 = fp.readlines()
@@ -311,17 +312,6 @@ if __name__ == '__main__':
         k = 1
 
 
-
-        #current_square = []
-        #for line in lines:
-        #    if (k % 9 != 0):
-        #        for item in line.split('\t')[0:8]:
-        #            current_square.append(float(item))
-        #    else:
-        #        temp_final.append(np.asarray(current_square))
-        #        y_final.append([0.9])
-        #        current_square = []
-        #    k = k + 1
         k = 1
         current_tri = []
         for line in lines2:
@@ -334,7 +324,6 @@ if __name__ == '__main__':
                 list_temp = []
                 for item in line.split('\t')[0:10]:
                     list_temp.append(float(item))
-                #y_final.append([0.1])
                 y_final.append(list_temp)
                 current_tri = []
 
@@ -346,25 +335,15 @@ if __name__ == '__main__':
 
         temp_final = np.asarray(temp_final)
         y_final = np.asarray(y_final)
-        # print(temp_final.shape)
-        # print(y_final.shape)
-
-
-
         arr = np.asarray(temp_final)
         nn = Neural_Network()
 
         if (choice == 0):
+            temp_final[0] = np.zeros(64)
             break
 
         print("before training:" + "  line count = " + str(lineCount))
         out = nn.forward(arr)
-        #print(nn.W3)
-        #print(out)
-        # for i in range(0, 10):
-        #     print("i = " + str(i) + ":")
-        #     print(out[i])
-        #print(out[3])
         t = trainer(nn)
         t.train(arr, np.asarray(y_final))
     print("after training:")
@@ -378,3 +357,22 @@ if __name__ == '__main__':
     end = time.time()
     print("time = " + str(end - start))
     nn.SaveWeights()
+
+    #testcase file generation
+    k = 0
+    for array in nn.x:
+        WriteArrayToFile(array,"testcase" + str(k) + "input.txt" )
+        k = k + 1
+    k = 0
+    for array in nn.a2:
+        WriteArrayToFile(array,"testcase" + str(k) + "layer1output.txt" )
+        k = k + 1
+    k = 0
+    for array in nn.a3:
+        WriteArrayToFile(array,"testcase" + str(k) + "layer2output.txt" )
+        k = k + 1
+    k = 0
+    for array in nn.yHat:
+        WriteArrayToFile(array,"testcase" + str(k) + "layer_final_output.txt" )
+        k = k + 1
+
