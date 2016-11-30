@@ -166,13 +166,25 @@ def writeFile(data, filename):
 
 
 if __name__ == '__main__':
+  
+    imageSize = input("What is the image size, 8x8 or 4x4  (8/4):? ")
+    if (imageSize == "8"):
+        imageSize = 8
+    else:
+        imageSize = 4 
+
     print("Retrieving and formating data...")
     data = getTrainData()
     for i in range(0, 10):
         showImage(data, i)
     dir_path = os.path.dirname(os.path.realpath(__file__))
     print("Writing data to MNISTdataset.txt")
-    writeFile(data, dir_path + "/MNISTdataset8x8.txt")
+    f = "/MNISTdataset"
+    if (imageSize == 8):
+        f = f + "8x8.txt"
+    else:
+        f = f + "4x4.txt"
+    writeFile(data, dir_path + f)
 
 
 

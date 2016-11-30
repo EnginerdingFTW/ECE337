@@ -9,6 +9,7 @@ import time
 ## ----------------------- Part 5 ---------------------------- ##
 import convert_fixed_point
 
+fileType = "8x8"
 class Neural_Network(object):
     def __init__(self):
         #Define Hyperparameters
@@ -217,7 +218,7 @@ class trainer(object):
 def SaveWeightsToFile(list_weights, layerSizes):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     # print(dir_path)
-    fp = open(dir_path + "/shapeWeights.txt", 'w')
+    fp = open(dir_path + "/shapeWeights" + fileType + ".txt", 'w')
     for item in layerSizes:
         fp.write(str(item) + "\n")
     for weights in list_weights:
@@ -229,7 +230,7 @@ def SaveWeightsToFile(list_weights, layerSizes):
 
 def LoadWeightFromFile():
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    dir_path = dir_path + "/shapeWeights.txt"
+    dir_path = dir_path + "/shapeWeights" + fileType + ".txt"
     if (not os.path.isfile(dir_path)):
         return None, None, None, None
     fp = open(dir_path, 'r')
@@ -285,7 +286,7 @@ def LoadWeightFromFile():
 
 def WriteArrayToFile(array, filename):
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    path = dir_path + "/testcases/" + filename
+    path = dir_path + "/testcases" + fileType + "/" + filename
     fp = open(path, 'w')
     for element in array:
         temp = "%.9f" % element
@@ -295,7 +296,12 @@ def WriteArrayToFile(array, filename):
     os.remove(path) #removes the files that were generated for standard floating point, leaving just the fixed point
 
 if __name__ == '__main__':
+    choice2 = input("Is this 8x8 or 4x4 (1/0)?: ")
     choice = input("Are you training (1/0)?: ")
+    size = 8
+    if (choice2 ==  0):
+        fileType = "4x4"
+        size = 4
 
     start = time.time()
     lineCount = 0
@@ -303,7 +309,7 @@ if __name__ == '__main__':
 
 
         dir_path = os.path.dirname(os.path.realpath(__file__))
-        fp = open(dir_path + "/MNISTdataset.txt", 'r')
+        fp = open(dir_path + "/MNISTdataset" + fileType + ".txt", 'r')
         lines2 = fp.readlines()
         fp.close()
 
@@ -316,8 +322,8 @@ if __name__ == '__main__':
         current_tri = []
         for line in lines2:
             lineCount = lineCount + 1
-            if (k % 9 != 0):
-                for item in line.split('\t')[0:8]:
+            if (k % (size + 1) != 0):
+                for item in line.split('\t')[0:size]:
                     current_tri.append(float(item))
             else:
                 temp_final.append(np.asarray(current_tri))
@@ -327,7 +333,7 @@ if __name__ == '__main__':
                 y_final.append(list_temp)
                 current_tri = []
 
-            if (k == 9 * 10):
+            if (k == (size + 1) * 10):
                 break
             k = k + 1
 
@@ -337,9 +343,10 @@ if __name__ == '__main__':
         y_final = np.asarray(y_final)
         arr = np.asarray(temp_final)
         nn = Neural_Network()
+        nn.inputLayerSize = size * size
 
         if (choice == 0):
-            temp_final[0] = np.zeros(64)
+            temp_final[0] = np.zeros(size * size)
             break
 
         print("before training:" + "  line count = " + str(lineCount))
