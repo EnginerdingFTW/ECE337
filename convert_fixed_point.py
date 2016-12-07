@@ -1,7 +1,7 @@
 import os
 
 
-bit_precision = 16
+bit_precision = 12
 
 def ConvertToFixedPoint(dir_path):
     read = open(dir_path, 'r')
@@ -78,9 +78,59 @@ def ToBinary(val):
     num = sign + num
     return num
 
+def BinToDec(st):
+    num = 0
+    k = 0
+    sign_bit = 1
+    if (st[len(st) - 1] == '\n'):
+        st = st[:(len(st) - 1)]
+    for letter in st:
+        val = 0
+        if (letter != "."):
+            num = num * 2
+
+        if (letter == "1"):
+            val = 1
+        if (k != 0):
+            num = num + val
+        else:
+            if (val == 1):
+                sign_bit = -1
+        k = k + 1
+        # print("letter = " + str(letter) + "  num = " + str(num))
+    return num * sign_bit
+
+
+
+def ConvertToDecimal(file):
+    read = open(dir_path, 'r')
+    write = open(dir_path[0:len(dir_path) - 9] + "dec.txt", 'w')
+
+    lines = read.readlines()
+
+    temp = ""
+    for line in lines:
+        num = 0
+        if ("." in line):
+            #is fixed point
+            parts = line.split('.')
+            t = GetFloating(parts[1])
+            if (line[0] == "1"):
+                t = t * -1
+            num = BinToDec(parts[0]) + t
+        else:
+            #is regular binary
+            num = BinToDec(line)
+        temp = temp + str(num) + "\n"
+
+    write.write(temp)
 
 if __name__ == '__main__':
     file = raw_input("Enter the file name of the file to convert relative to this directory: ")
+    choice = input ("To fixed - 1     or     To Decimal - 0    (1/0): ")
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    ConvertToFixedPoint(dir_path + "/" + file)
-    #fp = open(dir_path + "/MNISTdataset.txt", 'r')
+    dir_path = dir_path + "/" + file
+    if (choice == 1):
+        ConvertToFixedPoint(dir_path)
+    else:
+        ConvertToDecimal(dir_path)

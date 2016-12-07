@@ -8,6 +8,7 @@ import time
 
 ## ----------------------- Part 5 ---------------------------- ##
 import convert_fixed_point
+import FixedToBinary
 
 fileType = "8x8"
 class Neural_Network(object):
@@ -368,18 +369,23 @@ if __name__ == '__main__':
     #testcase file generation
     k = 0
     for array in nn.x:
-        WriteArrayToFile(array,"testcase" + str(k) + "input.txt" )
+        name_temp = "t" + str(k) + "in.txt"
+        name_temp2 = "t" + str(k) + "in_fixed.txt"
+        WriteArrayToFile(array,name_temp)
+        FixedToBinary.ConvertToBinary(os.path.dirname(os.path.realpath(__file__)) + "/testcases" + fileType + "/" + name_temp2)
         k = k + 1
     k = 0
     for array in nn.a2:
-        WriteArrayToFile(array,"testcase" + str(k) + "layer1output.txt" )
+        WriteArrayToFile(array,"t" + str(k) + "lay1.txt" )
         k = k + 1
     k = 0
     for array in nn.a3:
-        WriteArrayToFile(array,"testcase" + str(k) + "layer2output.txt" )
+        WriteArrayToFile(array,"t" + str(k) + "lay2.txt" )
         k = k + 1
     k = 0
     for array in nn.yHat:
-        WriteArrayToFile(array,"testcase" + str(k) + "layer_final_output.txt" )
+        WriteArrayToFile(array,"t" + str(k) + "layOut.txt" )
         k = k + 1
+    for item in nn.W3:
+        print(item)
 

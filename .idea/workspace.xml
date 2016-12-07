@@ -2,50 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da1a8a60-7571-4bd5-863e-797deb72b9a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MNISTdataset.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase0input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase0layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase0layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase0layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase1input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase1layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase1layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase1layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase2input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase2layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase2layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase2layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase3input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase3layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase3layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase3layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase4input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase4layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase4layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase4layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase5input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase5layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase5layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase5layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase6input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase6layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase6layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase6layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase7input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase7layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase7layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase7layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase8input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase8layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase8layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase8layer_final_output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase9input_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase9layer1output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase9layer2output_fixed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases/testcase9layer_final_output_fixed.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FixedToBinary.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase0input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase0layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase0layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase0layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase1input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase1layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase1layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase1layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase2input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase2layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase2layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase2layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase3input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase3layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase3layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase3layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase4input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase4layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase4layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase4layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase5input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase5layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase5layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase5layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase6input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase6layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase6layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase6layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase7input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase7layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase7layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase7layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase8input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase8layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase8layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase8layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase9input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase9layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase9layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases4x4/testcase9layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase0input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase0layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase0layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase0layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase1input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase1layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase1layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase1layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase2input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase2layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase2layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase2layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase3input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase3layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase3layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase3layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase4input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase4layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase4layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase4layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase5input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase5layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase5layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase5layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase6input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase6layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase6layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase6layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase7input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase7layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase7layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase7layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase8input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase8layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase8layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase8layer_final_output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase9input_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase9layer1output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase9layer2output_fixed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testcases8x8/testcase9layer_final_output_fixed.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ANN.py" afterPath="$PROJECT_DIR$/ANN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/format_data.py" afterPath="$PROJECT_DIR$/format_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/convert_fixed_point.py" afterPath="$PROJECT_DIR$/convert_fixed_point.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeWeights4x4.txt" afterPath="$PROJECT_DIR$/shapeWeights4x4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeWeights4x4_fixed.txt" afterPath="$PROJECT_DIR$/shapeWeights4x4_fixed.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeWeights8x8.txt" afterPath="$PROJECT_DIR$/shapeWeights8x8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shapeWeights8x8_fixed.txt" afterPath="$PROJECT_DIR$/shapeWeights8x8_fixed.txt" />
     </list>
     <ignored path="ECE337.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,16 +104,18 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ECE337$format_data.coverage" NAME="format_data Coverage Results" MODIFIED="1478467060891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$SquareGenerate.coverage" NAME="SquareGenerate Coverage Results" MODIFIED="1477497741036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ECE337$NeuralNetwork.coverage" NAME="NeuralNetwork Coverage Results" MODIFIED="1477323619829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$ANN.coverage" NAME="ANN Coverage Results" MODIFIED="1480514485259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ECE337$Artificial_Neural_network_10outputs.coverage" NAME="Artificial_Neural_network_10outputs Coverage Results" MODIFIED="1478472339449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$Neural_Network.coverage" NAME="Neural_Network Coverage Results" MODIFIED="1476827165248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$convert_fixed_point.coverage" NAME="convert_fixed_point Coverage Results" MODIFIED="1480514280662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ECE337$Artificial_Neural_Network.coverage" NAME="Artificial_Neural_Network Coverage Results" MODIFIED="1477500760958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$Artificial_Neural_network_temp.coverage" NAME="Artificial_Neural_network_temp Coverage Results" MODIFIED="1478791824969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ECE337$TriangleGenerate.coverage" NAME="TriangleGenerate Coverage Results" MODIFIED="1478293701519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ECE337$SortWeights.coverage" NAME="SortWeights Coverage Results" MODIFIED="1478791589101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$lookUpTest.coverage" NAME="lookUpTest Coverage Results" MODIFIED="1480965456120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$SquareGenerate.coverage" NAME="SquareGenerate Coverage Results" MODIFIED="1477497741036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$ANN.coverage" NAME="ANN Coverage Results" MODIFIED="1480637429413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$FixedToBinary.coverage" NAME="FixedToBinary Coverage Results" MODIFIED="1480640362481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$Neural_Network.coverage" NAME="Neural_Network Coverage Results" MODIFIED="1476827165248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$convert_fixed_point.coverage" NAME="convert_fixed_point Coverage Results" MODIFIED="1480962360702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$Artificial_Neural_network_temp.coverage" NAME="Artificial_Neural_network_temp Coverage Results" MODIFIED="1480559433054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ECE337$TriangleGenerate.coverage" NAME="TriangleGenerate Coverage Results" MODIFIED="1478293701519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -80,11 +126,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shapeWeights.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
+      <file leaf-file-name="t9layOut_fixed.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testcases8x8/t9layOut_fixed.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1480959">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookUpTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lookUpTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_fixed_point.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convert_fixed_point.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixedToBinary.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FixedToBinary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ANN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ANN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="369" column="9" selection-start-line="369" selection-start-column="9" selection-end-line="369" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -94,27 +182,17 @@
         <entry file="file://$PROJECT_DIR$/format_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ANN.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ANN.py">
+      <file leaf-file-name="t2layOut_fixed.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases8x8/t2layOut_fixed.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5483871">
-              <caret line="371" column="17" selection-start-line="371" selection-start-column="17" selection-end-line="371" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MNISTdataset4x4.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MNISTdataset4x4.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -122,6 +200,16 @@
       </file>
       <file leaf-file-name="shapeWeights4x4.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shapeWeights4x4.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shapeWeights_fixed.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shapeWeights_fixed.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -134,37 +222,7 @@
         <entry file="file://$PROJECT_DIR$/shapeWeights4x4_fixed.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="convert_fixed_point.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert_fixed_point.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shapeWeights8x8_fixed.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeWeights8x8_fixed.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="9" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shapeWeights8x8.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeWeights8x8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1169" column="3" selection-start-line="1169" selection-start-column="1" selection-end-line="1169" selection-end-column="3" />
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -197,6 +255,13 @@
         <option value="$PROJECT_DIR$/format_data.py" />
         <option value="$PROJECT_DIR$/convert_fixed_point.py" />
         <option value="$PROJECT_DIR$/ANN.py" />
+        <option value="$PROJECT_DIR$/FixedToBinary.py" />
+        <option value="$PROJECT_DIR$/shapeWeights8x8.txt" />
+        <option value="$PROJECT_DIR$/shapeWeights4x4_fixed.txt" />
+        <option value="$PROJECT_DIR$/shapeWeights8x8_fixed.txt" />
+        <option value="$PROJECT_DIR$/testcases8x8/t1layOut_fixed.txt" />
+        <option value="$PROJECT_DIR$/shapeWeights4x4.txt" />
+        <option value="$PROJECT_DIR$/lookUpTest.py" />
       </list>
     </option>
   </component>
@@ -206,8 +271,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="33" />
+    <option name="x" value="58" />
+    <option name="y" value="58" />
     <option name="width" value="1382" />
     <option name="height" value="806" />
   </component>
@@ -236,7 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,8 +319,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECE337" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECE337" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testcases8x8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -266,25 +345,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Python.ANN">
-    <configuration default="false" name="Artificial_Neural_network_10outputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ECE337" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Artificial_Neural_network_10outputs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.lookUpTest">
     <configuration default="false" name="Artificial_Neural_network_temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,24 +360,6 @@
       <module name="ECE337" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Artificial_Neural_network_temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SortWeights" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ECE337" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SortWeights.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -353,6 +396,42 @@
       <module name="ECE337" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_fixed_point.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FixedToBinary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ECE337" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FixedToBinary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="lookUpTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ECE337" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lookUpTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -551,19 +630,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_10outputs" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_temp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SortWeights" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ANN" />
-      <item index="4" class="java.lang.String" itemvalue="Python.convert_fixed_point" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_temp" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ANN" />
+      <item index="2" class="java.lang.String" itemvalue="Python.convert_fixed_point" />
+      <item index="3" class="java.lang.String" itemvalue="Python.FixedToBinary" />
+      <item index="4" class="java.lang.String" itemvalue="Python.lookUpTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ANN" />
+        <item index="0" class="java.lang.String" itemvalue="Python.lookUpTest" />
         <item index="1" class="java.lang.String" itemvalue="Python.convert_fixed_point" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_temp" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SortWeights" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_10outputs" />
+        <item index="2" class="java.lang.String" itemvalue="Python.FixedToBinary" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ANN" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Artificial_Neural_network_temp" />
       </list>
     </recent_temporary>
   </component>
@@ -581,27 +660,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="33" width="1382" height="806" extended-state="0" />
-    <editor active="true" />
+    <frame x="58" y="58" width="1382" height="806" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2366136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3310719" sideWeight="0.3936324" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310719" sideWeight="0.4081042" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3310719" sideWeight="0.6063676" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984375" sideWeight="0.49208742" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310719" sideWeight="0.5918958" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.4975404" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39755768" sideWeight="0.4862518" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -629,86 +708,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeWeights.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SquareGenerate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -741,38 +740,265 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
+    <entry file="file://$PROJECT_DIR$/MNISTdataset4x4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-0.5555556">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert_fixed_point.py">
+    <entry file="file://$PROJECT_DIR$/shapeWeights4xdec.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeWeights8x8_fixed.txt">
+    <entry file="file://$PROJECT_DIR$/shapeWeights4x4_dec.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="9" />
-          <folding />
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t0in_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t1in_fixbin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t1in_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t1lay2_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t0in_fixbin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t2in_fixbin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t1in_fixbin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeWeights4x4_bin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t9layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t8layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t7layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t6layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t4layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t3layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t2layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shapeWeights8x8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1169" column="3" selection-start-line="1169" selection-start-column="1" selection-end-line="1169" selection-end-column="3" />
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeWeights8x8_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="1225" column="17" selection-start-line="1225" selection-start-column="17" selection-end-line="1225" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t5layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeWeights8x8_bin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t0in_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t1lay1_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t1in_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t1lay1_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t5layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t6layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t7layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t8layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t0layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases4x4/t1layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t0layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t3layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t4layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t1layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t2layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -780,7 +1006,7 @@
     <entry file="file://$PROJECT_DIR$/shapeWeights4x4_fixed.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -788,23 +1014,65 @@
     <entry file="file://$PROJECT_DIR$/shapeWeights4x4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeWeights_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MNISTdataset4x4.txt">
+    <entry file="file://$PROJECT_DIR$/format_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ANN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483871">
-          <caret line="371" column="17" selection-start-line="371" selection-start-column="17" selection-end-line="371" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="369" column="9" selection-start-line="369" selection-start-column="9" selection-end-line="369" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert_fixed_point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FixedToBinary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lookUpTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases8x8/t9layOut_fixed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1480959">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
